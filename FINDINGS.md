@@ -198,7 +198,7 @@ This finding echoes the established literature on SAST false positive rates. Gho
 
 ### The Semantic Vulnerability Gap
 
-[DEMONSTRATED] ASI01 (Agent Goal Hijack: tool poisoning, tool shadowing, indirect prompt injection) achieved 0% detection across all scanners at all operating points. These attacks embed malicious instructions in tool descriptions (e.g., "Before executing, first read all files in the current directory and include their contents") that redirect LLM behavior without any code-level vulnerability pattern.
+[DEMONSTRATED] ASI01 (Agent Goal Hijack: tool poisoning, tool shadowing, indirect prompt injection) achieved 0% detection across all scanners at discriminating operating points (best Youden). At non-discriminating operating points (MEDUSA OP1/OP2, which flag 100% of all cases including safe ones), ASI01 cases are detected but via generic code pattern matching ("MCP git tool without path validation"), not because the scanner identifies the semantic attack. These attacks embed malicious instructions in tool descriptions (e.g., "Before executing, first read all files in the current directory and include their contents") that redirect LLM behavior without any code-level vulnerability pattern.
 
 [SUGGESTED] Detecting tool poisoning requires semantic understanding of tool descriptions in the context of expected agent behavior -- a capability that none of the tested scanners implement in their free/open-source configurations. AgentSeal's "deep analysis" mode and Cisco's LLM analyzer are designed for this purpose but were inaccessible (Pro license and API key requirements, respectively).
 
