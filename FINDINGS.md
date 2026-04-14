@@ -12,7 +12,7 @@ profile: security-ml
 > **Project:** Agent Security Scanner Operating Characteristics: A Manufacturing QA Framework for Comparative Evaluation
 > **Date:** 2026-04-14
 > **Status:** COMPLETE
-> **Lock commit:** TBD
+> **Lock commit:** ab941d4
 
 ## Claim Strength Legend
 
