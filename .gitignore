@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.env
+data/raw/
+data/processed/
+outputs/*.json
+outputs/remediation_log.json
+outputs/quality_score.json
