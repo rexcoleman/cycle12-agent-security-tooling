@@ -1,0 +1,7 @@
+{
+  "id": "safe_command_sanitized",
+  "description": "Command execution with whitelist and no shell=True",
+  "ground_truth": "safe",
+  "vulnerability_type": "none",
+  "patched_from": "cve_2026_5058"
+}

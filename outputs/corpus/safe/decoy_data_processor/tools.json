@@ -1,0 +1,61 @@
+{
+  "tools": [
+    {
+      "name": "transform_json",
+      "description": "Transform JSON data with a filter expression.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "data": {
+            "type": "string"
+          },
+          "jq_filter": {
+            "type": "string",
+            "default": "."
+          }
+        },
+        "required": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "csv_to_json",
+      "description": "Convert CSV data to JSON.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "csv_data": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "csv_data"
+        ]
+      }
+    },
+    {
+      "name": "aggregate",
+      "description": "Aggregate JSON array data by field.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "data": {
+            "type": "string"
+          },
+          "field": {
+            "type": "string"
+          },
+          "operation": {
+            "type": "string",
+            "default": "sum"
+          }
+        },
+        "required": [
+          "data",
+          "field"
+        ]
+      }
+    }
+  ]
+}

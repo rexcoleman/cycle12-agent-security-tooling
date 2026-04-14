@@ -1,0 +1,7 @@
+{
+  "id": "safe_git_sanitized",
+  "description": "Git operations with path validation and no shell=True",
+  "ground_truth": "safe",
+  "vulnerability_type": "none",
+  "patched_from": "cve_2025_53107"
+}

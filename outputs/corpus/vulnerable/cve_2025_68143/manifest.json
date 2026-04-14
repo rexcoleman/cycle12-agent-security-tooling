@@ -1,0 +1,10 @@
+{
+  "id": "cve_2025_68143",
+  "cve": "CVE-2025-68143",
+  "owasp_category": "ASI02",
+  "vulnerability_type": "path_traversal",
+  "cwe": "CWE-22",
+  "ground_truth": "vulnerable",
+  "cvss": 7.5,
+  "description": "Anthropic mcp-server-git path traversal allowing arbitrary file read"
+}

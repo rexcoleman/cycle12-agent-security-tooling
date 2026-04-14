@@ -1,0 +1,23 @@
+{
+  "tools": [
+    {
+      "name": "check",
+      "description": "Check the signature of file using md5.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "file_name": {
+            "type": "string"
+          },
+          "sig": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "file_name",
+          "sig"
+        ]
+      }
+    }
+  ]
+}

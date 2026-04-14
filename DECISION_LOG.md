@@ -46,3 +46,43 @@ Gate passed. Stage 0-2 complete. Next action: formulate (Stage 3).
 | Cross-Engine Context filled | PASS |
 | EDA Readiness (type unknown) | PASS |
 | DB cross-check | PASS (count: 15) |
+
+### Quality Loop — 2026-04-14T06:30:51+00:00
+- Score: 6.1/10 | PASS: 51 | FAIL: 4 | WARN: 28
+- Action: FIX_REQUIRED
+- Structural: 0 | Fixable: 13
+
+### Quality Loop — 2026-04-14T06:32:07+00:00
+- Score: 6.4/10 | PASS: 54 | FAIL: 3 | WARN: 27
+- Action: FIX_REQUIRED
+- Structural: 0 | Fixable: 11
+
+### Quality Loop — 2026-04-14T06:33:08+00:00
+- Score: 6.4/10 | PASS: 54 | FAIL: 3 | WARN: 27
+- Action: FIX_REQUIRED
+- Structural: 0 | Fixable: 11
+
+### Quality Loop — 2026-04-14T06:33:25+00:00
+- Score: 6.4/10 | PASS: 54 | FAIL: 3 | WARN: 27
+- Action: FIX_REQUIRED
+- Structural: 0 | Fixable: 11
+
+### Quality Loop — 2026-04-14T06:34:42+00:00
+- Score: 6.9/10 | PASS: 58 | FAIL: 0 | WARN: 26
+- Action: AUTO_FIX
+- Structural: 0 | Fixable: 11
+
+### Quality Loop — 2026-04-14T07:01:39+00:00
+- Score: 6.9/10 | PASS: 58 | FAIL: 0 | WARN: 26
+- Action: AUTO_FIX
+- Structural: 0 | Fixable: 11
+
+### Quality Loop — 2026-04-14T07:11:21+00:00
+- Score: 8.9/10 | PASS: 75 | FAIL: 0 | WARN: 9
+- Action: PASS
+- Structural: 0 | Fixable: 5
+
+### Quality Loop — 2026-04-14T07:12:55+00:00
+- Score: 9.0/10 | PASS: 76 | FAIL: 0 | WARN: 8
+- Action: PASS
+- Structural: 0 | Fixable: 5

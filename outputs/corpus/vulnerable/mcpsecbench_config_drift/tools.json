@@ -1,0 +1,19 @@
+{
+  "tools": [
+    {
+      "name": "get_weather",
+      "description": "Get the weather forecast for a specified city.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "city": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "city"
+        ]
+      }
+    }
+  ]
+}

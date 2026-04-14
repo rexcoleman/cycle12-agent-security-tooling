@@ -1,0 +1,6 @@
+{
+  "id": "decoy_crypto_utils",
+  "description": "Crypto/hash utilities - safe despite handling sensitive operations",
+  "ground_truth": "safe",
+  "vulnerability_type": "none"
+}

@@ -1,0 +1,334 @@
+test_case_id,scanner,operating_point,run,finding_summary,classification,ground_truth,match,category,max_severity
+asi03_dns_rebinding,cisco,OP1_static_all,1,none,FN,vulnerable,False,ASI03,SAFE
+asi03_dns_rebinding,cisco,OP2_stdio_all,1,none,FN,vulnerable,False,ASI03,SAFE
+asi03_dns_rebinding,cisco,OP3_static_high,1,none,FN,vulnerable,False,ASI03,SAFE
+asi03_dns_rebinding,medusa,OP1_any,1,MCPServerScanner:MEDIUM:Database URL with credentials,TP,vulnerable,True,ASI03,MEDIUM
+asi03_dns_rebinding,medusa,OP2_medium,1,MCPServerScanner:MEDIUM:Database URL with credentials,TP,vulnerable,True,ASI03,MEDIUM
+asi03_dns_rebinding,medusa,OP3_high,1,MCPServerScanner:MEDIUM:Database URL with credentials,FN,vulnerable,False,ASI03,MEDIUM
+asi03_dns_rebinding,medusa,OP4_critical,1,MCPServerScanner:MEDIUM:Database URL with credentials,FN,vulnerable,False,ASI03,MEDIUM
+asi03_dns_rebinding,sigil,OP1_score_gt13,1,"score=17,bandit=0",TP,vulnerable,True,ASI03,score=17
+asi03_dns_rebinding,sigil,OP2_score_gt19,1,"score=17,bandit=0",FN,vulnerable,False,ASI03,score=17
+cve_2025_53107,cisco,OP1_static_all,1,yara_analyzer:HIGH,TP,vulnerable,True,ASI05,HIGH
+cve_2025_53107,cisco,OP2_stdio_all,1,yara_analyzer:HIGH,TP,vulnerable,True,ASI05,HIGH
+cve_2025_53107,cisco,OP3_static_high,1,yara_analyzer:HIGH,TP,vulnerable,True,ASI05,HIGH
+cve_2025_53107,medusa,OP1_any,1,MCPServerScanner:CRITICAL:Shell=True with potential user input; MCPServerScanner:CRITICAL:Shell=True with potential user input; MCPServerScanner:MEDIUM:subprocess with shell=True enables command injecti; MCPServerScanner:MEDIUM:subprocess with shell=True enables command injecti; MCPServerScanner:MEDIUM:MCP git tool without path validation,TP,vulnerable,True,ASI05,CRITICAL
+cve_2025_53107,medusa,OP2_medium,1,MCPServerScanner:CRITICAL:Shell=True with potential user input; MCPServerScanner:CRITICAL:Shell=True with potential user input; MCPServerScanner:MEDIUM:subprocess with shell=True enables command injecti; MCPServerScanner:MEDIUM:subprocess with shell=True enables command injecti; MCPServerScanner:MEDIUM:MCP git tool without path validation,TP,vulnerable,True,ASI05,CRITICAL
+cve_2025_53107,medusa,OP3_high,1,MCPServerScanner:CRITICAL:Shell=True with potential user input; MCPServerScanner:CRITICAL:Shell=True with potential user input; MCPServerScanner:MEDIUM:subprocess with shell=True enables command injecti; MCPServerScanner:MEDIUM:subprocess with shell=True enables command injecti; MCPServerScanner:MEDIUM:MCP git tool without path validation,TP,vulnerable,True,ASI05,CRITICAL
+cve_2025_53107,medusa,OP4_critical,1,MCPServerScanner:CRITICAL:Shell=True with potential user input; MCPServerScanner:CRITICAL:Shell=True with potential user input; MCPServerScanner:MEDIUM:subprocess with shell=True enables command injecti; MCPServerScanner:MEDIUM:subprocess with shell=True enables command injecti; MCPServerScanner:MEDIUM:MCP git tool without path validation,TP,vulnerable,True,ASI05,CRITICAL
+cve_2025_53107,sigil,OP1_score_gt13,1,"score=22,bandit=3",TP,vulnerable,True,ASI05,score=22
+cve_2025_53107,sigil,OP2_score_gt19,1,"score=22,bandit=3",TP,vulnerable,True,ASI05,score=22
+cve_2025_53818,cisco,OP1_static_all,1,none,FN,vulnerable,False,ASI05,SAFE
+cve_2025_53818,cisco,OP2_stdio_all,1,none,FN,vulnerable,False,ASI05,SAFE
+cve_2025_53818,cisco,OP3_static_high,1,none,FN,vulnerable,False,ASI05,SAFE
+cve_2025_53818,medusa,OP1_any,1,MCPServerScanner:CRITICAL:Shell=True with potential user input; MCPServerScanner:CRITICAL:Shell=True with potential user input; MCPServerScanner:MEDIUM:subprocess with shell=True enables command injecti; MCPServerScanner:MEDIUM:subprocess with shell=True enables command injecti,TP,vulnerable,True,ASI05,CRITICAL
+cve_2025_53818,medusa,OP2_medium,1,MCPServerScanner:CRITICAL:Shell=True with potential user input; MCPServerScanner:CRITICAL:Shell=True with potential user input; MCPServerScanner:MEDIUM:subprocess with shell=True enables command injecti; MCPServerScanner:MEDIUM:subprocess with shell=True enables command injecti,TP,vulnerable,True,ASI05,CRITICAL
+cve_2025_53818,medusa,OP3_high,1,MCPServerScanner:CRITICAL:Shell=True with potential user input; MCPServerScanner:CRITICAL:Shell=True with potential user input; MCPServerScanner:MEDIUM:subprocess with shell=True enables command injecti; MCPServerScanner:MEDIUM:subprocess with shell=True enables command injecti,TP,vulnerable,True,ASI05,CRITICAL
+cve_2025_53818,medusa,OP4_critical,1,MCPServerScanner:CRITICAL:Shell=True with potential user input; MCPServerScanner:CRITICAL:Shell=True with potential user input; MCPServerScanner:MEDIUM:subprocess with shell=True enables command injecti; MCPServerScanner:MEDIUM:subprocess with shell=True enables command injecti,TP,vulnerable,True,ASI05,CRITICAL
+cve_2025_53818,sigil,OP1_score_gt13,1,"score=19,bandit=2",TP,vulnerable,True,ASI05,score=19
+cve_2025_53818,sigil,OP2_score_gt19,1,"score=19,bandit=2",FN,vulnerable,False,ASI05,score=19
+cve_2025_6514,cisco,OP1_static_all,1,none,FN,vulnerable,False,ASI04,SAFE
+cve_2025_6514,cisco,OP2_stdio_all,1,none,FN,vulnerable,False,ASI04,SAFE
+cve_2025_6514,cisco,OP3_static_high,1,none,FN,vulnerable,False,ASI04,SAFE
+cve_2025_6514,medusa,OP1_any,1,MCPServerScanner:CRITICAL:Shell=True with potential user input; MCPServerScanner:CRITICAL:Shell=True with potential user input; MCPServerScanner:MEDIUM:subprocess with shell=True enables command injecti; MCPServerScanner:MEDIUM:subprocess with shell=True enables command injecti,TP,vulnerable,True,ASI04,CRITICAL
+cve_2025_6514,medusa,OP2_medium,1,MCPServerScanner:CRITICAL:Shell=True with potential user input; MCPServerScanner:CRITICAL:Shell=True with potential user input; MCPServerScanner:MEDIUM:subprocess with shell=True enables command injecti; MCPServerScanner:MEDIUM:subprocess with shell=True enables command injecti,TP,vulnerable,True,ASI04,CRITICAL
+cve_2025_6514,medusa,OP3_high,1,MCPServerScanner:CRITICAL:Shell=True with potential user input; MCPServerScanner:CRITICAL:Shell=True with potential user input; MCPServerScanner:MEDIUM:subprocess with shell=True enables command injecti; MCPServerScanner:MEDIUM:subprocess with shell=True enables command injecti,TP,vulnerable,True,ASI04,CRITICAL
+cve_2025_6514,medusa,OP4_critical,1,MCPServerScanner:CRITICAL:Shell=True with potential user input; MCPServerScanner:CRITICAL:Shell=True with potential user input; MCPServerScanner:MEDIUM:subprocess with shell=True enables command injecti; MCPServerScanner:MEDIUM:subprocess with shell=True enables command injecti,TP,vulnerable,True,ASI04,CRITICAL
+cve_2025_6514,sigil,OP1_score_gt13,1,"score=19,bandit=2",TP,vulnerable,True,ASI04,score=19
+cve_2025_6514,sigil,OP2_score_gt19,1,"score=19,bandit=2",FN,vulnerable,False,ASI04,score=19
+cve_2025_68143,cisco,OP1_static_all,1,none,FN,vulnerable,False,ASI02,SAFE
+cve_2025_68143,cisco,OP2_stdio_all,1,none,FN,vulnerable,False,ASI02,SAFE
+cve_2025_68143,cisco,OP3_static_high,1,none,FN,vulnerable,False,ASI02,SAFE
+cve_2025_68143,medusa,OP1_any,1,none,FN,vulnerable,False,ASI02,SAFE
+cve_2025_68143,medusa,OP2_medium,1,none,FN,vulnerable,False,ASI02,SAFE
+cve_2025_68143,medusa,OP3_high,1,none,FN,vulnerable,False,ASI02,SAFE
+cve_2025_68143,medusa,OP4_critical,1,none,FN,vulnerable,False,ASI02,SAFE
+cve_2025_68143,sigil,OP1_score_gt13,1,"score=13,bandit=0",FN,vulnerable,False,ASI02,score=13
+cve_2025_68143,sigil,OP2_score_gt19,1,"score=13,bandit=0",FN,vulnerable,False,ASI02,score=13
+cve_2025_68144,cisco,OP1_static_all,1,none,FN,vulnerable,False,ASI02,SAFE
+cve_2025_68144,cisco,OP2_stdio_all,1,none,FN,vulnerable,False,ASI02,SAFE
+cve_2025_68144,cisco,OP3_static_high,1,none,FN,vulnerable,False,ASI02,SAFE
+cve_2025_68144,medusa,OP1_any,1,MCPServerScanner:CRITICAL:Shell=True with potential user input; MCPServerScanner:MEDIUM:subprocess with shell=True enables command injecti,TP,vulnerable,True,ASI02,CRITICAL
+cve_2025_68144,medusa,OP2_medium,1,MCPServerScanner:CRITICAL:Shell=True with potential user input; MCPServerScanner:MEDIUM:subprocess with shell=True enables command injecti,TP,vulnerable,True,ASI02,CRITICAL
+cve_2025_68144,medusa,OP3_high,1,MCPServerScanner:CRITICAL:Shell=True with potential user input; MCPServerScanner:MEDIUM:subprocess with shell=True enables command injecti,TP,vulnerable,True,ASI02,CRITICAL
+cve_2025_68144,medusa,OP4_critical,1,MCPServerScanner:CRITICAL:Shell=True with potential user input; MCPServerScanner:MEDIUM:subprocess with shell=True enables command injecti,TP,vulnerable,True,ASI02,CRITICAL
+cve_2025_68144,sigil,OP1_score_gt13,1,"score=19,bandit=1",TP,vulnerable,True,ASI02,score=19
+cve_2025_68144,sigil,OP2_score_gt19,1,"score=19,bandit=1",FN,vulnerable,False,ASI02,score=19
+cve_2025_68145,cisco,OP1_static_all,1,none,FN,vulnerable,False,ASI03,SAFE
+cve_2025_68145,cisco,OP2_stdio_all,1,none,FN,vulnerable,False,ASI03,SAFE
+cve_2025_68145,cisco,OP3_static_high,1,none,FN,vulnerable,False,ASI03,SAFE
+cve_2025_68145,medusa,OP1_any,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,TP,vulnerable,True,ASI03,MEDIUM
+cve_2025_68145,medusa,OP2_medium,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,TP,vulnerable,True,ASI03,MEDIUM
+cve_2025_68145,medusa,OP3_high,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,FN,vulnerable,False,ASI03,MEDIUM
+cve_2025_68145,medusa,OP4_critical,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,FN,vulnerable,False,ASI03,MEDIUM
+cve_2025_68145,sigil,OP1_score_gt13,1,"score=16,bandit=0",TP,vulnerable,True,ASI03,score=16
+cve_2025_68145,sigil,OP2_score_gt19,1,"score=16,bandit=0",FN,vulnerable,False,ASI03,score=16
+cve_2026_0755,cisco,OP1_static_all,1,none,FN,vulnerable,False,ASI05,SAFE
+cve_2026_0755,cisco,OP2_stdio_all,1,none,FN,vulnerable,False,ASI05,SAFE
+cve_2026_0755,cisco,OP3_static_high,1,none,FN,vulnerable,False,ASI05,SAFE
+cve_2026_0755,medusa,OP1_any,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,TP,vulnerable,True,ASI05,MEDIUM
+cve_2026_0755,medusa,OP2_medium,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,TP,vulnerable,True,ASI05,MEDIUM
+cve_2026_0755,medusa,OP3_high,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,FN,vulnerable,False,ASI05,MEDIUM
+cve_2026_0755,medusa,OP4_critical,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,FN,vulnerable,False,ASI05,MEDIUM
+cve_2026_0755,sigil,OP1_score_gt13,1,"score=29,bandit=2",TP,vulnerable,True,ASI05,score=29
+cve_2026_0755,sigil,OP2_score_gt19,1,"score=29,bandit=2",TP,vulnerable,True,ASI05,score=29
+cve_2026_0756,cisco,OP1_static_all,1,none,FN,vulnerable,False,ASI05,SAFE
+cve_2026_0756,cisco,OP2_stdio_all,1,none,FN,vulnerable,False,ASI05,SAFE
+cve_2026_0756,cisco,OP3_static_high,1,none,FN,vulnerable,False,ASI05,SAFE
+cve_2026_0756,medusa,OP1_any,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,TP,vulnerable,True,ASI05,MEDIUM
+cve_2026_0756,medusa,OP2_medium,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,TP,vulnerable,True,ASI05,MEDIUM
+cve_2026_0756,medusa,OP3_high,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,FN,vulnerable,False,ASI05,MEDIUM
+cve_2026_0756,medusa,OP4_critical,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,FN,vulnerable,False,ASI05,MEDIUM
+cve_2026_0756,sigil,OP1_score_gt13,1,"score=19,bandit=2",TP,vulnerable,True,ASI05,score=19
+cve_2026_0756,sigil,OP2_score_gt19,1,"score=19,bandit=2",FN,vulnerable,False,ASI05,score=19
+cve_2026_1977,cisco,OP1_static_all,1,none,FN,vulnerable,False,ASI05,SAFE
+cve_2026_1977,cisco,OP2_stdio_all,1,none,FN,vulnerable,False,ASI05,SAFE
+cve_2026_1977,cisco,OP3_static_high,1,none,FN,vulnerable,False,ASI05,SAFE
+cve_2026_1977,medusa,OP1_any,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,TP,vulnerable,True,ASI05,MEDIUM
+cve_2026_1977,medusa,OP2_medium,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,TP,vulnerable,True,ASI05,MEDIUM
+cve_2026_1977,medusa,OP3_high,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,FN,vulnerable,False,ASI05,MEDIUM
+cve_2026_1977,medusa,OP4_critical,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,FN,vulnerable,False,ASI05,MEDIUM
+cve_2026_1977,sigil,OP1_score_gt13,1,"score=21,bandit=1",TP,vulnerable,True,ASI05,score=21
+cve_2026_1977,sigil,OP2_score_gt19,1,"score=21,bandit=1",TP,vulnerable,True,ASI05,score=21
+cve_2026_2008,cisco,OP1_static_all,1,none,FN,vulnerable,False,ASI05,SAFE
+cve_2026_2008,cisco,OP2_stdio_all,1,none,FN,vulnerable,False,ASI05,SAFE
+cve_2026_2008,cisco,OP3_static_high,1,none,FN,vulnerable,False,ASI05,SAFE
+cve_2026_2008,medusa,OP1_any,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,TP,vulnerable,True,ASI05,MEDIUM
+cve_2026_2008,medusa,OP2_medium,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,TP,vulnerable,True,ASI05,MEDIUM
+cve_2026_2008,medusa,OP3_high,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,FN,vulnerable,False,ASI05,MEDIUM
+cve_2026_2008,medusa,OP4_critical,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,FN,vulnerable,False,ASI05,MEDIUM
+cve_2026_2008,sigil,OP1_score_gt13,1,"score=21,bandit=1",TP,vulnerable,True,ASI05,score=21
+cve_2026_2008,sigil,OP2_score_gt19,1,"score=21,bandit=1",TP,vulnerable,True,ASI05,score=21
+cve_2026_23744,cisco,OP1_static_all,1,none,FN,vulnerable,False,ASI03,SAFE
+cve_2026_23744,cisco,OP2_stdio_all,1,none,FN,vulnerable,False,ASI03,SAFE
+cve_2026_23744,cisco,OP3_static_high,1,none,FN,vulnerable,False,ASI03,SAFE
+cve_2026_23744,medusa,OP1_any,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,TP,vulnerable,True,ASI03,MEDIUM
+cve_2026_23744,medusa,OP2_medium,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,TP,vulnerable,True,ASI03,MEDIUM
+cve_2026_23744,medusa,OP3_high,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,FN,vulnerable,False,ASI03,MEDIUM
+cve_2026_23744,medusa,OP4_critical,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,FN,vulnerable,False,ASI03,MEDIUM
+cve_2026_23744,sigil,OP1_score_gt13,1,"score=16,bandit=1",TP,vulnerable,True,ASI03,score=16
+cve_2026_23744,sigil,OP2_score_gt19,1,"score=16,bandit=1",FN,vulnerable,False,ASI03,score=16
+cve_2026_25546,cisco,OP1_static_all,1,none,FN,vulnerable,False,ASI05,SAFE
+cve_2026_25546,cisco,OP2_stdio_all,1,none,FN,vulnerable,False,ASI05,SAFE
+cve_2026_25546,cisco,OP3_static_high,1,none,FN,vulnerable,False,ASI05,SAFE
+cve_2026_25546,medusa,OP1_any,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,TP,vulnerable,True,ASI05,MEDIUM
+cve_2026_25546,medusa,OP2_medium,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,TP,vulnerable,True,ASI05,MEDIUM
+cve_2026_25546,medusa,OP3_high,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,FN,vulnerable,False,ASI05,MEDIUM
+cve_2026_25546,medusa,OP4_critical,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,FN,vulnerable,False,ASI05,MEDIUM
+cve_2026_25546,sigil,OP1_score_gt13,1,"score=21,bandit=1",TP,vulnerable,True,ASI05,score=21
+cve_2026_25546,sigil,OP2_score_gt19,1,"score=21,bandit=1",TP,vulnerable,True,ASI05,score=21
+cve_2026_26029,cisco,OP1_static_all,1,none,FN,vulnerable,False,ASI05,SAFE
+cve_2026_26029,cisco,OP2_stdio_all,1,none,FN,vulnerable,False,ASI05,SAFE
+cve_2026_26029,cisco,OP3_static_high,1,none,FN,vulnerable,False,ASI05,SAFE
+cve_2026_26029,medusa,OP1_any,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,TP,vulnerable,True,ASI05,MEDIUM
+cve_2026_26029,medusa,OP2_medium,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,TP,vulnerable,True,ASI05,MEDIUM
+cve_2026_26029,medusa,OP3_high,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,FN,vulnerable,False,ASI05,MEDIUM
+cve_2026_26029,medusa,OP4_critical,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,FN,vulnerable,False,ASI05,MEDIUM
+cve_2026_26029,sigil,OP1_score_gt13,1,"score=19,bandit=2",TP,vulnerable,True,ASI05,score=19
+cve_2026_26029,sigil,OP2_score_gt19,1,"score=19,bandit=2",FN,vulnerable,False,ASI05,score=19
+cve_2026_32871,cisco,OP1_static_all,1,none,FN,vulnerable,False,ASI04,SAFE
+cve_2026_32871,cisco,OP2_stdio_all,1,none,FN,vulnerable,False,ASI04,SAFE
+cve_2026_32871,cisco,OP3_static_high,1,none,FN,vulnerable,False,ASI04,SAFE
+cve_2026_32871,medusa,OP1_any,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,TP,vulnerable,True,ASI04,MEDIUM
+cve_2026_32871,medusa,OP2_medium,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,TP,vulnerable,True,ASI04,MEDIUM
+cve_2026_32871,medusa,OP3_high,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,FN,vulnerable,False,ASI04,MEDIUM
+cve_2026_32871,medusa,OP4_critical,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,FN,vulnerable,False,ASI04,MEDIUM
+cve_2026_32871,sigil,OP1_score_gt13,1,"score=25,bandit=2",TP,vulnerable,True,ASI04,score=25
+cve_2026_32871,sigil,OP2_score_gt19,1,"score=25,bandit=2",TP,vulnerable,True,ASI04,score=25
+cve_2026_33989,cisco,OP1_static_all,1,yara_analyzer:HIGH; yara_analyzer:HIGH,TP,vulnerable,True,ASI02,HIGH
+cve_2026_33989,cisco,OP2_stdio_all,1,yara_analyzer:HIGH; yara_analyzer:HIGH,TP,vulnerable,True,ASI02,HIGH
+cve_2026_33989,cisco,OP3_static_high,1,yara_analyzer:HIGH; yara_analyzer:HIGH,TP,vulnerable,True,ASI02,HIGH
+cve_2026_33989,medusa,OP1_any,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,TP,vulnerable,True,ASI02,MEDIUM
+cve_2026_33989,medusa,OP2_medium,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,TP,vulnerable,True,ASI02,MEDIUM
+cve_2026_33989,medusa,OP3_high,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,FN,vulnerable,False,ASI02,MEDIUM
+cve_2026_33989,medusa,OP4_critical,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,FN,vulnerable,False,ASI02,MEDIUM
+cve_2026_33989,sigil,OP1_score_gt13,1,"score=19,bandit=2",TP,vulnerable,True,ASI02,score=19
+cve_2026_33989,sigil,OP2_score_gt19,1,"score=19,bandit=2",FN,vulnerable,False,ASI02,score=19
+cve_2026_5058,cisco,OP1_static_all,1,none,FN,vulnerable,False,ASI05,SAFE
+cve_2026_5058,cisco,OP2_stdio_all,1,none,FN,vulnerable,False,ASI05,SAFE
+cve_2026_5058,cisco,OP3_static_high,1,none,FN,vulnerable,False,ASI05,SAFE
+cve_2026_5058,medusa,OP1_any,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,TP,vulnerable,True,ASI05,MEDIUM
+cve_2026_5058,medusa,OP2_medium,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,TP,vulnerable,True,ASI05,MEDIUM
+cve_2026_5058,medusa,OP3_high,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,FN,vulnerable,False,ASI05,MEDIUM
+cve_2026_5058,medusa,OP4_critical,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,FN,vulnerable,False,ASI05,MEDIUM
+cve_2026_5058,sigil,OP1_score_gt13,1,"score=19,bandit=2",TP,vulnerable,True,ASI05,score=19
+cve_2026_5058,sigil,OP2_score_gt19,1,"score=19,bandit=2",FN,vulnerable,False,ASI05,score=19
+mcpsecbench_config_drift,cisco,OP1_static_all,1,none,FN,vulnerable,False,ASI04,SAFE
+mcpsecbench_config_drift,cisco,OP2_stdio_all,1,none,FN,vulnerable,False,ASI04,SAFE
+mcpsecbench_config_drift,cisco,OP3_static_high,1,none,FN,vulnerable,False,ASI04,SAFE
+mcpsecbench_config_drift,medusa,OP1_any,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,TP,vulnerable,True,ASI04,MEDIUM
+mcpsecbench_config_drift,medusa,OP2_medium,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,TP,vulnerable,True,ASI04,MEDIUM
+mcpsecbench_config_drift,medusa,OP3_high,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,FN,vulnerable,False,ASI04,MEDIUM
+mcpsecbench_config_drift,medusa,OP4_critical,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,FN,vulnerable,False,ASI04,MEDIUM
+mcpsecbench_config_drift,sigil,OP1_score_gt13,1,"score=18,bandit=1",TP,vulnerable,True,ASI04,score=18
+mcpsecbench_config_drift,sigil,OP2_score_gt19,1,"score=18,bandit=1",FN,vulnerable,False,ASI04,score=18
+mcpsecbench_indirect_injection,cisco,OP1_static_all,1,none,FN,vulnerable,False,ASI01,SAFE
+mcpsecbench_indirect_injection,cisco,OP2_stdio_all,1,none,FN,vulnerable,False,ASI01,SAFE
+mcpsecbench_indirect_injection,cisco,OP3_static_high,1,none,FN,vulnerable,False,ASI01,SAFE
+mcpsecbench_indirect_injection,medusa,OP1_any,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,TP,vulnerable,True,ASI01,MEDIUM
+mcpsecbench_indirect_injection,medusa,OP2_medium,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,TP,vulnerable,True,ASI01,MEDIUM
+mcpsecbench_indirect_injection,medusa,OP3_high,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,FN,vulnerable,False,ASI01,MEDIUM
+mcpsecbench_indirect_injection,medusa,OP4_critical,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,FN,vulnerable,False,ASI01,MEDIUM
+mcpsecbench_indirect_injection,sigil,OP1_score_gt13,1,"score=13,bandit=0",FN,vulnerable,False,ASI01,score=13
+mcpsecbench_indirect_injection,sigil,OP2_score_gt19,1,"score=13,bandit=0",FN,vulnerable,False,ASI01,score=13
+mcpsecbench_name_squatting_server,cisco,OP1_static_all,1,none,FN,vulnerable,False,ASI04,SAFE
+mcpsecbench_name_squatting_server,cisco,OP2_stdio_all,1,none,FN,vulnerable,False,ASI04,SAFE
+mcpsecbench_name_squatting_server,cisco,OP3_static_high,1,none,FN,vulnerable,False,ASI04,SAFE
+mcpsecbench_name_squatting_server,medusa,OP1_any,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,TP,vulnerable,True,ASI04,MEDIUM
+mcpsecbench_name_squatting_server,medusa,OP2_medium,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,TP,vulnerable,True,ASI04,MEDIUM
+mcpsecbench_name_squatting_server,medusa,OP3_high,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,FN,vulnerable,False,ASI04,MEDIUM
+mcpsecbench_name_squatting_server,medusa,OP4_critical,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,FN,vulnerable,False,ASI04,MEDIUM
+mcpsecbench_name_squatting_server,sigil,OP1_score_gt13,1,"score=21,bandit=1",TP,vulnerable,True,ASI04,score=21
+mcpsecbench_name_squatting_server,sigil,OP2_score_gt19,1,"score=21,bandit=1",TP,vulnerable,True,ASI04,score=21
+mcpsecbench_name_squatting_tools,cisco,OP1_static_all,1,none,FN,vulnerable,False,ASI04,SAFE
+mcpsecbench_name_squatting_tools,cisco,OP2_stdio_all,1,none,FN,vulnerable,False,ASI04,SAFE
+mcpsecbench_name_squatting_tools,cisco,OP3_static_high,1,none,FN,vulnerable,False,ASI04,SAFE
+mcpsecbench_name_squatting_tools,medusa,OP1_any,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,TP,vulnerable,True,ASI04,MEDIUM
+mcpsecbench_name_squatting_tools,medusa,OP2_medium,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,TP,vulnerable,True,ASI04,MEDIUM
+mcpsecbench_name_squatting_tools,medusa,OP3_high,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,FN,vulnerable,False,ASI04,MEDIUM
+mcpsecbench_name_squatting_tools,medusa,OP4_critical,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,FN,vulnerable,False,ASI04,MEDIUM
+mcpsecbench_name_squatting_tools,sigil,OP1_score_gt13,1,"score=13,bandit=0",FN,vulnerable,False,ASI04,score=13
+mcpsecbench_name_squatting_tools,sigil,OP2_score_gt19,1,"score=13,bandit=0",FN,vulnerable,False,ASI04,score=13
+mcpsecbench_schema_inconsistency,cisco,OP1_static_all,1,none,FN,vulnerable,False,ASI04,SAFE
+mcpsecbench_schema_inconsistency,cisco,OP2_stdio_all,1,none,FN,vulnerable,False,ASI04,SAFE
+mcpsecbench_schema_inconsistency,cisco,OP3_static_high,1,none,FN,vulnerable,False,ASI04,SAFE
+mcpsecbench_schema_inconsistency,medusa,OP1_any,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,TP,vulnerable,True,ASI04,MEDIUM
+mcpsecbench_schema_inconsistency,medusa,OP2_medium,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,TP,vulnerable,True,ASI04,MEDIUM
+mcpsecbench_schema_inconsistency,medusa,OP3_high,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,FN,vulnerable,False,ASI04,MEDIUM
+mcpsecbench_schema_inconsistency,medusa,OP4_critical,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,FN,vulnerable,False,ASI04,MEDIUM
+mcpsecbench_schema_inconsistency,sigil,OP1_score_gt13,1,"score=21,bandit=1",TP,vulnerable,True,ASI04,score=21
+mcpsecbench_schema_inconsistency,sigil,OP2_score_gt19,1,"score=21,bandit=1",TP,vulnerable,True,ASI04,score=21
+mcpsecbench_tool_poisoning,cisco,OP1_static_all,1,none,FN,vulnerable,False,ASI01,SAFE
+mcpsecbench_tool_poisoning,cisco,OP2_stdio_all,1,none,FN,vulnerable,False,ASI01,SAFE
+mcpsecbench_tool_poisoning,cisco,OP3_static_high,1,none,FN,vulnerable,False,ASI01,SAFE
+mcpsecbench_tool_poisoning,medusa,OP1_any,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,TP,vulnerable,True,ASI01,MEDIUM
+mcpsecbench_tool_poisoning,medusa,OP2_medium,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,TP,vulnerable,True,ASI01,MEDIUM
+mcpsecbench_tool_poisoning,medusa,OP3_high,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,FN,vulnerable,False,ASI01,MEDIUM
+mcpsecbench_tool_poisoning,medusa,OP4_critical,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,FN,vulnerable,False,ASI01,MEDIUM
+mcpsecbench_tool_poisoning,sigil,OP1_score_gt13,1,"score=13,bandit=0",FN,vulnerable,False,ASI01,score=13
+mcpsecbench_tool_poisoning,sigil,OP2_score_gt19,1,"score=13,bandit=0",FN,vulnerable,False,ASI01,score=13
+mcpsecbench_tool_shadowing,cisco,OP1_static_all,1,none,FN,vulnerable,False,ASI01,SAFE
+mcpsecbench_tool_shadowing,cisco,OP2_stdio_all,1,none,FN,vulnerable,False,ASI01,SAFE
+mcpsecbench_tool_shadowing,cisco,OP3_static_high,1,none,FN,vulnerable,False,ASI01,SAFE
+mcpsecbench_tool_shadowing,medusa,OP1_any,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,TP,vulnerable,True,ASI01,MEDIUM
+mcpsecbench_tool_shadowing,medusa,OP2_medium,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,TP,vulnerable,True,ASI01,MEDIUM
+mcpsecbench_tool_shadowing,medusa,OP3_high,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,FN,vulnerable,False,ASI01,MEDIUM
+mcpsecbench_tool_shadowing,medusa,OP4_critical,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,FN,vulnerable,False,ASI01,MEDIUM
+mcpsecbench_tool_shadowing,sigil,OP1_score_gt13,1,"score=13,bandit=0",FN,vulnerable,False,ASI01,score=13
+mcpsecbench_tool_shadowing,sigil,OP2_score_gt19,1,"score=13,bandit=0",FN,vulnerable,False,ASI01,score=13
+mcpsecbench_vulnerable_server,cisco,OP1_static_all,1,none,FN,vulnerable,False,ASI05,SAFE
+mcpsecbench_vulnerable_server,cisco,OP2_stdio_all,1,none,FN,vulnerable,False,ASI05,SAFE
+mcpsecbench_vulnerable_server,cisco,OP3_static_high,1,none,FN,vulnerable,False,ASI05,SAFE
+mcpsecbench_vulnerable_server,medusa,OP1_any,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,TP,vulnerable,True,ASI05,MEDIUM
+mcpsecbench_vulnerable_server,medusa,OP2_medium,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,TP,vulnerable,True,ASI05,MEDIUM
+mcpsecbench_vulnerable_server,medusa,OP3_high,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,FN,vulnerable,False,ASI05,MEDIUM
+mcpsecbench_vulnerable_server,medusa,OP4_critical,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,FN,vulnerable,False,ASI05,MEDIUM
+mcpsecbench_vulnerable_server,sigil,OP1_score_gt13,1,"score=21,bandit=1",TP,vulnerable,True,ASI05,score=21
+mcpsecbench_vulnerable_server,sigil,OP2_score_gt19,1,"score=21,bandit=1",TP,vulnerable,True,ASI05,score=21
+decoy_crypto_utils,cisco,OP1_static_all,1,none,TN,safe,True,N/A,SAFE
+decoy_crypto_utils,cisco,OP2_stdio_all,1,none,TN,safe,True,N/A,SAFE
+decoy_crypto_utils,cisco,OP3_static_high,1,none,TN,safe,True,N/A,SAFE
+decoy_crypto_utils,medusa,OP1_any,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,FP,safe,False,N/A,MEDIUM
+decoy_crypto_utils,medusa,OP2_medium,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,FP,safe,False,N/A,MEDIUM
+decoy_crypto_utils,medusa,OP3_high,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,TN,safe,True,N/A,MEDIUM
+decoy_crypto_utils,medusa,OP4_critical,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,TN,safe,True,N/A,MEDIUM
+decoy_crypto_utils,sigil,OP1_score_gt13,1,"score=20,bandit=0",FP,safe,False,N/A,score=20
+decoy_crypto_utils,sigil,OP2_score_gt19,1,"score=20,bandit=0",FP,safe,False,N/A,score=20
+decoy_data_processor,cisco,OP1_static_all,1,none,TN,safe,True,N/A,SAFE
+decoy_data_processor,cisco,OP2_stdio_all,1,none,TN,safe,True,N/A,SAFE
+decoy_data_processor,cisco,OP3_static_high,1,none,TN,safe,True,N/A,SAFE
+decoy_data_processor,medusa,OP1_any,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,FP,safe,False,N/A,MEDIUM
+decoy_data_processor,medusa,OP2_medium,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,FP,safe,False,N/A,MEDIUM
+decoy_data_processor,medusa,OP3_high,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,TN,safe,True,N/A,MEDIUM
+decoy_data_processor,medusa,OP4_critical,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,TN,safe,True,N/A,MEDIUM
+decoy_data_processor,sigil,OP1_score_gt13,1,"score=13,bandit=0",TN,safe,True,N/A,score=13
+decoy_data_processor,sigil,OP2_score_gt19,1,"score=13,bandit=0",TN,safe,True,N/A,score=13
+decoy_database,cisco,OP1_static_all,1,none,TN,safe,True,N/A,SAFE
+decoy_database,cisco,OP2_stdio_all,1,none,TN,safe,True,N/A,SAFE
+decoy_database,cisco,OP3_static_high,1,none,TN,safe,True,N/A,SAFE
+decoy_database,medusa,OP1_any,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,FP,safe,False,N/A,MEDIUM
+decoy_database,medusa,OP2_medium,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,FP,safe,False,N/A,MEDIUM
+decoy_database,medusa,OP3_high,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,TN,safe,True,N/A,MEDIUM
+decoy_database,medusa,OP4_critical,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,TN,safe,True,N/A,MEDIUM
+decoy_database,sigil,OP1_score_gt13,1,"score=19,bandit=2",FP,safe,False,N/A,score=19
+decoy_database,sigil,OP2_score_gt19,1,"score=19,bandit=2",TN,safe,True,N/A,score=19
+decoy_http_client,cisco,OP1_static_all,1,none,TN,safe,True,N/A,SAFE
+decoy_http_client,cisco,OP2_stdio_all,1,none,TN,safe,True,N/A,SAFE
+decoy_http_client,cisco,OP3_static_high,1,none,TN,safe,True,N/A,SAFE
+decoy_http_client,medusa,OP1_any,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,FP,safe,False,N/A,MEDIUM
+decoy_http_client,medusa,OP2_medium,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,FP,safe,False,N/A,MEDIUM
+decoy_http_client,medusa,OP3_high,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,TN,safe,True,N/A,MEDIUM
+decoy_http_client,medusa,OP4_critical,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,TN,safe,True,N/A,MEDIUM
+decoy_http_client,sigil,OP1_score_gt13,1,"score=22,bandit=1",FP,safe,False,N/A,score=22
+decoy_http_client,sigil,OP2_score_gt19,1,"score=22,bandit=1",FP,safe,False,N/A,score=22
+decoy_text_processor,cisco,OP1_static_all,1,none,TN,safe,True,N/A,SAFE
+decoy_text_processor,cisco,OP2_stdio_all,1,none,TN,safe,True,N/A,SAFE
+decoy_text_processor,cisco,OP3_static_high,1,none,TN,safe,True,N/A,SAFE
+decoy_text_processor,medusa,OP1_any,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,FP,safe,False,N/A,MEDIUM
+decoy_text_processor,medusa,OP2_medium,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,FP,safe,False,N/A,MEDIUM
+decoy_text_processor,medusa,OP3_high,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,TN,safe,True,N/A,MEDIUM
+decoy_text_processor,medusa,OP4_critical,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,TN,safe,True,N/A,MEDIUM
+decoy_text_processor,sigil,OP1_score_gt13,1,"score=13,bandit=0",TN,safe,True,N/A,score=13
+decoy_text_processor,sigil,OP2_score_gt19,1,"score=13,bandit=0",TN,safe,True,N/A,score=13
+safe_api_validated,cisco,OP1_static_all,1,none,TN,safe,True,N/A,SAFE
+safe_api_validated,cisco,OP2_stdio_all,1,none,TN,safe,True,N/A,SAFE
+safe_api_validated,cisco,OP3_static_high,1,none,TN,safe,True,N/A,SAFE
+safe_api_validated,medusa,OP1_any,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,FP,safe,False,N/A,MEDIUM
+safe_api_validated,medusa,OP2_medium,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,FP,safe,False,N/A,MEDIUM
+safe_api_validated,medusa,OP3_high,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,TN,safe,True,N/A,MEDIUM
+safe_api_validated,medusa,OP4_critical,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,TN,safe,True,N/A,MEDIUM
+safe_api_validated,sigil,OP1_score_gt13,1,"score=19,bandit=1",FP,safe,False,N/A,score=19
+safe_api_validated,sigil,OP2_score_gt19,1,"score=19,bandit=1",TN,safe,True,N/A,score=19
+safe_authenticated,cisco,OP1_static_all,1,none,TN,safe,True,N/A,SAFE
+safe_authenticated,cisco,OP2_stdio_all,1,none,TN,safe,True,N/A,SAFE
+safe_authenticated,cisco,OP3_static_high,1,none,TN,safe,True,N/A,SAFE
+safe_authenticated,medusa,OP1_any,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,FP,safe,False,N/A,MEDIUM
+safe_authenticated,medusa,OP2_medium,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,FP,safe,False,N/A,MEDIUM
+safe_authenticated,medusa,OP3_high,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,TN,safe,True,N/A,MEDIUM
+safe_authenticated,medusa,OP4_critical,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,TN,safe,True,N/A,MEDIUM
+safe_authenticated,sigil,OP1_score_gt13,1,"score=15,bandit=0",FP,safe,False,N/A,score=15
+safe_authenticated,sigil,OP2_score_gt19,1,"score=15,bandit=0",TN,safe,True,N/A,score=15
+safe_command_sanitized,cisco,OP1_static_all,1,none,TN,safe,True,N/A,SAFE
+safe_command_sanitized,cisco,OP2_stdio_all,1,none,TN,safe,True,N/A,SAFE
+safe_command_sanitized,cisco,OP3_static_high,1,none,TN,safe,True,N/A,SAFE
+safe_command_sanitized,medusa,OP1_any,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,FP,safe,False,N/A,MEDIUM
+safe_command_sanitized,medusa,OP2_medium,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,FP,safe,False,N/A,MEDIUM
+safe_command_sanitized,medusa,OP3_high,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,TN,safe,True,N/A,MEDIUM
+safe_command_sanitized,medusa,OP4_critical,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,TN,safe,True,N/A,MEDIUM
+safe_command_sanitized,sigil,OP1_score_gt13,1,"score=13,bandit=0",TN,safe,True,N/A,score=13
+safe_command_sanitized,sigil,OP2_score_gt19,1,"score=13,bandit=0",TN,safe,True,N/A,score=13
+safe_eval_literal,cisco,OP1_static_all,1,none,TN,safe,True,N/A,SAFE
+safe_eval_literal,cisco,OP2_stdio_all,1,none,TN,safe,True,N/A,SAFE
+safe_eval_literal,cisco,OP3_static_high,1,none,TN,safe,True,N/A,SAFE
+safe_eval_literal,medusa,OP1_any,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,FP,safe,False,N/A,MEDIUM
+safe_eval_literal,medusa,OP2_medium,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,FP,safe,False,N/A,MEDIUM
+safe_eval_literal,medusa,OP3_high,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,TN,safe,True,N/A,MEDIUM
+safe_eval_literal,medusa,OP4_critical,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,TN,safe,True,N/A,MEDIUM
+safe_eval_literal,sigil,OP1_score_gt13,1,"score=26,bandit=1",FP,safe,False,N/A,score=26
+safe_eval_literal,sigil,OP2_score_gt19,1,"score=26,bandit=1",FP,safe,False,N/A,score=26
+safe_git_sanitized,cisco,OP1_static_all,1,none,TN,safe,True,N/A,SAFE
+safe_git_sanitized,cisco,OP2_stdio_all,1,none,TN,safe,True,N/A,SAFE
+safe_git_sanitized,cisco,OP3_static_high,1,none,TN,safe,True,N/A,SAFE
+safe_git_sanitized,medusa,OP1_any,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,FP,safe,False,N/A,MEDIUM
+safe_git_sanitized,medusa,OP2_medium,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,FP,safe,False,N/A,MEDIUM
+safe_git_sanitized,medusa,OP3_high,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,TN,safe,True,N/A,MEDIUM
+safe_git_sanitized,medusa,OP4_critical,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,TN,safe,True,N/A,MEDIUM
+safe_git_sanitized,sigil,OP1_score_gt13,1,"score=13,bandit=0",TN,safe,True,N/A,score=13
+safe_git_sanitized,sigil,OP2_score_gt19,1,"score=13,bandit=0",TN,safe,True,N/A,score=13
+safe_honest_tools,cisco,OP1_static_all,1,none,TN,safe,True,N/A,SAFE
+safe_honest_tools,cisco,OP2_stdio_all,1,none,TN,safe,True,N/A,SAFE
+safe_honest_tools,cisco,OP3_static_high,1,none,TN,safe,True,N/A,SAFE
+safe_honest_tools,medusa,OP1_any,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,FP,safe,False,N/A,MEDIUM
+safe_honest_tools,medusa,OP2_medium,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,FP,safe,False,N/A,MEDIUM
+safe_honest_tools,medusa,OP3_high,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,TN,safe,True,N/A,MEDIUM
+safe_honest_tools,medusa,OP4_critical,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,TN,safe,True,N/A,MEDIUM
+safe_honest_tools,sigil,OP1_score_gt13,1,"score=13,bandit=0",TN,safe,True,N/A,score=13
+safe_honest_tools,sigil,OP2_score_gt19,1,"score=13,bandit=0",TN,safe,True,N/A,score=13
+safe_path_canonical,cisco,OP1_static_all,1,none,TN,safe,True,N/A,SAFE
+safe_path_canonical,cisco,OP2_stdio_all,1,none,TN,safe,True,N/A,SAFE
+safe_path_canonical,cisco,OP3_static_high,1,none,TN,safe,True,N/A,SAFE
+safe_path_canonical,medusa,OP1_any,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,FP,safe,False,N/A,MEDIUM
+safe_path_canonical,medusa,OP2_medium,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,FP,safe,False,N/A,MEDIUM
+safe_path_canonical,medusa,OP3_high,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,TN,safe,True,N/A,MEDIUM
+safe_path_canonical,medusa,OP4_critical,1,MCPServerScanner:MEDIUM:MCP git tool without path validation,TN,safe,True,N/A,MEDIUM
+safe_path_canonical,sigil,OP1_score_gt13,1,"score=13,bandit=0",TN,safe,True,N/A,score=13
+safe_path_canonical,sigil,OP2_score_gt19,1,"score=13,bandit=0",TN,safe,True,N/A,score=13

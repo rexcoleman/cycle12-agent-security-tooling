@@ -1,0 +1,6 @@
+{
+  "id": "decoy_data_processor",
+  "description": "Complex data processing server - safe despite complexity",
+  "ground_truth": "safe",
+  "vulnerability_type": "none"
+}

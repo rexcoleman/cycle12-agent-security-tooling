@@ -1,0 +1,10 @@
+{
+  "id": "cve_2025_53107",
+  "cve": "CVE-2025-53107",
+  "owasp_category": "ASI05",
+  "vulnerability_type": "command_injection",
+  "cwe": "CWE-78",
+  "ground_truth": "vulnerable",
+  "cvss": 9.8,
+  "description": "git-mcp-server command injection via unsanitized input to child_process.exec"
+}

@@ -1,0 +1,10 @@
+{
+  "id": "mcpsecbench_tool_poisoning",
+  "cve": "MCPSecBench-ToolPoisoning",
+  "owasp_category": "ASI01",
+  "vulnerability_type": "tool_poisoning",
+  "cwe": "N/A",
+  "ground_truth": "vulnerable",
+  "cvss": "N/A",
+  "description": "Tool descriptions contain hidden instructions to hijack LLM behavior"
+}

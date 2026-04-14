@@ -1,0 +1,7 @@
+{
+  "id": "safe_api_validated",
+  "description": "API client with URL validation preventing SSRF and path traversal",
+  "ground_truth": "safe",
+  "vulnerability_type": "none",
+  "patched_from": "cve_2026_32871"
+}

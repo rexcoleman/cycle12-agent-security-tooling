@@ -1,0 +1,42 @@
+{
+  "tools": [
+    {
+      "name": "git_clone",
+      "description": "Clone a git repository.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "repo_url": {
+            "type": "string"
+          },
+          "destination": {
+            "type": "string",
+            "default": "/tmp/repos"
+          }
+        },
+        "required": [
+          "repo_url"
+        ]
+      }
+    },
+    {
+      "name": "git_log",
+      "description": "Get git log for a repository.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "repo_path": {
+            "type": "string"
+          },
+          "count": {
+            "type": "integer",
+            "default": 10
+          }
+        },
+        "required": [
+          "repo_path"
+        ]
+      }
+    }
+  ]
+}

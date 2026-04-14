@@ -1,0 +1,10 @@
+{
+  "id": "cve_2026_25546",
+  "cve": "CVE-2026-25546",
+  "owasp_category": "ASI05",
+  "vulnerability_type": "command_injection",
+  "cwe": "CWE-78",
+  "ground_truth": "vulnerable",
+  "cvss": 9.8,
+  "description": "godot-mcp executeOperation passes projectPath directly to exec()"
+}

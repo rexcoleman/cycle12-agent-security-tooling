@@ -1,0 +1,45 @@
+{
+  "tools": [
+    {
+      "name": "create_issue",
+      "description": "Create a GitHub issue on the kanban board.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "body": {
+            "type": "string"
+          },
+          "labels": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "title",
+          "body"
+        ]
+      }
+    },
+    {
+      "name": "move_card",
+      "description": "Move a kanban card to a different column.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "card_id": {
+            "type": "string"
+          },
+          "column": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "card_id",
+          "column"
+        ]
+      }
+    }
+  ]
+}

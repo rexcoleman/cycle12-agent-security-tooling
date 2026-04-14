@@ -1,0 +1,10 @@
+{
+  "id": "cve_2026_2008",
+  "cve": "CVE-2026-2008",
+  "owasp_category": "ASI05",
+  "vulnerability_type": "code_injection_eval",
+  "cwe": "CWE-94",
+  "ground_truth": "vulnerable",
+  "cvss": 9.8,
+  "description": "fermat-mcp eqn_chart processes equation strings without neutralizing code constructs"
+}

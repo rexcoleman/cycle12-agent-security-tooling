@@ -1,0 +1,10 @@
+{
+  "id": "cve_2026_0756",
+  "cve": "CVE-2026-0756",
+  "owasp_category": "ASI05",
+  "vulnerability_type": "command_injection",
+  "cwe": "CWE-78",
+  "ground_truth": "vulnerable",
+  "cvss": 9.8,
+  "description": "GitHub Kanban MCP server async command injection via shell metacharacters"
+}

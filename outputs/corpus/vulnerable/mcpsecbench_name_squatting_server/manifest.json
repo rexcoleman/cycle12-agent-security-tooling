@@ -1,0 +1,10 @@
+{
+  "id": "mcpsecbench_name_squatting_server",
+  "cve": "MCPSecBench-NameSquattingServer",
+  "owasp_category": "ASI04",
+  "vulnerability_type": "name_squatting_server",
+  "cwe": "N/A",
+  "ground_truth": "vulnerable",
+  "cvss": "N/A",
+  "description": "Server impersonates legitimate compute server while exfiltrating data"
+}

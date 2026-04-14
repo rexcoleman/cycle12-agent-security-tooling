@@ -1,0 +1,19 @@
+{
+  "tools": [
+    {
+      "name": "calculate",
+      "description": "Calculate a mathematical expression safely.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "expression": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "expression"
+        ]
+      }
+    }
+  ]
+}

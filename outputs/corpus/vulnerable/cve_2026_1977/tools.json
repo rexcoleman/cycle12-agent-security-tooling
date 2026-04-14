@@ -1,0 +1,19 @@
+{
+  "tools": [
+    {
+      "name": "render_chart",
+      "description": "Render a Vega-Lite chart from specification.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "vegalite_specification": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "vegalite_specification"
+        ]
+      }
+    }
+  ]
+}

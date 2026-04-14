@@ -1,0 +1,13 @@
+test,comparison,statistic,p_value,significant_bonferroni,bonferroni_alpha,youden_diff
+Fisher_exact,cisco(OP1_static_all) vs medusa(OP3_high),0.4565,0.667101,False,0.016667,-0.08
+Fisher_exact,cisco(OP1_static_all) vs sigil(OP1_score_gt13),0.0217,0.0,True,0.016667,-0.22
+Fisher_exact,medusa(OP3_high) vs sigil(OP1_score_gt13),0.0476,1.2e-05,True,0.016667,-0.14
+Cohen_kappa,cisco(OP1_static_all) vs medusa(OP3_high),0.2816,,,,
+Cohen_kappa,cisco(OP1_static_all) vs sigil(OP1_score_gt13),0.0472,,,,
+Cohen_kappa,medusa(OP3_high) vs sigil(OP1_score_gt13),0.0976,,,,
+Youden_comparison,cisco(OP1_static_all) vs medusa(OP3_high),0.08,,,,-0.08
+Youden_comparison,cisco(OP1_static_all) vs sigil(OP1_score_gt13),0.22,,,,-0.22
+Youden_comparison,medusa(OP3_high) vs sigil(OP1_score_gt13),0.14,,,,-0.14
+KS_OC_curve,cisco vs medusa,1.0,0.057143,False,0.05,
+KS_OC_curve,cisco vs sigil,1.0,0.2,False,0.05,
+KS_OC_curve,medusa vs sigil,0.5,0.933333,False,0.05,

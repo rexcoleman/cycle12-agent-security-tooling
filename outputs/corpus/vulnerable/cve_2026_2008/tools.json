@@ -1,0 +1,23 @@
+{
+  "tools": [
+    {
+      "name": "render_equation_chart",
+      "description": "Render a mathematical equation as a chart.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "equation": {
+            "type": "string"
+          },
+          "x_range": {
+            "type": "string",
+            "default": "-10,10"
+          }
+        },
+        "required": [
+          "equation"
+        ]
+      }
+    }
+  ]
+}

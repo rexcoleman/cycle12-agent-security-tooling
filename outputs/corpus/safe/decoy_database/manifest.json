@@ -1,0 +1,6 @@
+{
+  "id": "decoy_database",
+  "description": "Database tool with parameterized queries - safe despite SQL access",
+  "ground_truth": "safe",
+  "vulnerability_type": "none"
+}

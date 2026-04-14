@@ -1,0 +1,46 @@
+{
+  "tools": [
+    {
+      "name": "take_screenshot",
+      "description": "Take a screenshot of a mobile device.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "device_id": {
+            "type": "string"
+          },
+          "save_to": {
+            "type": "string",
+            "default": "/tmp/screenshots"
+          }
+        },
+        "required": [
+          "device_id"
+        ]
+      }
+    },
+    {
+      "name": "record_screen",
+      "description": "Record device screen.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "device_id": {
+            "type": "string"
+          },
+          "output": {
+            "type": "string",
+            "default": "/tmp/recordings"
+          },
+          "duration": {
+            "type": "integer",
+            "default": 10
+          }
+        },
+        "required": [
+          "device_id"
+        ]
+      }
+    }
+  ]
+}

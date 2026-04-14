@@ -1,0 +1,7 @@
+{
+  "id": "safe_eval_literal",
+  "description": "Math evaluation with AST validation (no arbitrary code execution)",
+  "ground_truth": "safe",
+  "vulnerability_type": "none",
+  "patched_from": "cve_2026_1977"
+}

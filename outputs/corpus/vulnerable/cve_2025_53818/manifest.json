@@ -1,0 +1,10 @@
+{
+  "id": "cve_2025_53818",
+  "cve": "CVE-2025-53818",
+  "owasp_category": "ASI05",
+  "vulnerability_type": "command_injection_via_prompt_injection",
+  "cwe": "CWE-78",
+  "ground_truth": "vulnerable",
+  "cvss": 8.5,
+  "description": "GitHub Kanban MCP command injection via LLM prompt injection through shell characters"
+}

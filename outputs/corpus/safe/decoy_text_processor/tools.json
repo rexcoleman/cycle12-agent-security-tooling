@@ -1,0 +1,61 @@
+{
+  "tools": [
+    {
+      "name": "regex_extract",
+      "description": "Extract text matching a regex pattern.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string"
+          },
+          "pattern": {
+            "type": "string"
+          },
+          "group": {
+            "type": "integer",
+            "default": 0
+          }
+        },
+        "required": [
+          "text",
+          "pattern"
+        ]
+      }
+    },
+    {
+      "name": "word_count",
+      "description": "Count words, sentences, and characters in text.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "text"
+        ]
+      }
+    },
+    {
+      "name": "summarize",
+      "description": "Extract first N sentences as summary.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string"
+          },
+          "max_sentences": {
+            "type": "integer",
+            "default": 3
+          }
+        },
+        "required": [
+          "text"
+        ]
+      }
+    }
+  ]
+}

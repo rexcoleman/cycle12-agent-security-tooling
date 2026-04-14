@@ -1,0 +1,36 @@
+{
+  "tools": [
+    {
+      "name": "query_users",
+      "description": "Query users from the database.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "name_filter": {
+            "type": "string"
+          },
+          "limit": {
+            "type": "integer",
+            "default": 10
+          }
+        },
+        "required": []
+      }
+    },
+    {
+      "name": "count_records",
+      "description": "Count records in a table.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "table": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "table"
+        ]
+      }
+    }
+  ]
+}

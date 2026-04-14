@@ -1,0 +1,38 @@
+{
+  "tools": [
+    {
+      "name": "call_api",
+      "description": "Call an API endpoint through the OpenAPI provider.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "endpoint": {
+            "type": "string"
+          },
+          "method": {
+            "type": "string",
+            "default": "GET"
+          }
+        },
+        "required": [
+          "endpoint"
+        ]
+      }
+    },
+    {
+      "name": "load_spec",
+      "description": "Load an OpenAPI specification from URL.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "spec_url": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "spec_url"
+        ]
+      }
+    }
+  ]
+}

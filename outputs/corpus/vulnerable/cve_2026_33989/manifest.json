@@ -1,0 +1,10 @@
+{
+  "id": "cve_2026_33989",
+  "cve": "CVE-2026-33989",
+  "owasp_category": "ASI02",
+  "vulnerability_type": "path_traversal",
+  "cwe": "CWE-22",
+  "ground_truth": "vulnerable",
+  "cvss": 8.1,
+  "description": "mobile-mcp path traversal in saveTo/output params of screenshot/recording tools"
+}

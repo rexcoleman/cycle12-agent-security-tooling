@@ -1,0 +1,27 @@
+{
+  "tools": [
+    {
+      "name": "query_data",
+      "description": "Query the local data store.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "query"
+        ]
+      }
+    },
+    {
+      "name": "get_config",
+      "description": "Get server configuration. No authentication required.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {}
+      }
+    }
+  ]
+}

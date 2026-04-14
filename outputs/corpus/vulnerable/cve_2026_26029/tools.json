@@ -1,0 +1,42 @@
+{
+  "tools": [
+    {
+      "name": "deploy_component",
+      "description": "Deploy a Salesforce component to an org.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "org_alias": {
+            "type": "string"
+          },
+          "component_path": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "org_alias",
+          "component_path"
+        ]
+      }
+    },
+    {
+      "name": "run_apex",
+      "description": "Execute anonymous Apex code on a Salesforce org.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "org_alias": {
+            "type": "string"
+          },
+          "apex_code": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "org_alias",
+          "apex_code"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "id": "cve_2025_68145",
+  "cve": "CVE-2025-68145",
+  "owasp_category": "ASI03",
+  "vulnerability_type": "authorization_bypass",
+  "cwe": "CWE-863",
+  "ground_truth": "vulnerable",
+  "cvss": 7.5,
+  "description": "Anthropic mcp-server-git repository scoping bypass via path traversal"
+}

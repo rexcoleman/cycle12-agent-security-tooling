@@ -1,0 +1,48 @@
+{
+  "tools": [
+    {
+      "name": "calculate",
+      "description": "Calculate a mathematical expression safely.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "expression": {
+            "type": "string",
+            "description": "Mathematical expression to evaluate"
+          },
+          "mode": {
+            "type": "string",
+            "description": "Calculation mode",
+            "default": "safe",
+            "enum": [
+              "safe"
+            ]
+          }
+        },
+        "required": [
+          "expression"
+        ]
+      }
+    },
+    {
+      "name": "read_data",
+      "description": "Read data from a predefined data directory.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "path": {
+            "type": "string",
+            "description": "Filename in the data directory"
+          },
+          "format": {
+            "type": "string",
+            "default": "json"
+          }
+        },
+        "required": [
+          "path"
+        ]
+      }
+    }
+  ]
+}

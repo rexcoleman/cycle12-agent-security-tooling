@@ -1,0 +1,10 @@
+{
+  "id": "cve_2025_6514",
+  "cve": "CVE-2025-6514",
+  "owasp_category": "ASI04",
+  "vulnerability_type": "command_injection_supply_chain",
+  "cwe": "CWE-78",
+  "ground_truth": "vulnerable",
+  "cvss": 8.5,
+  "description": "mcp-remote OS command injection via untrusted MCP server connections"
+}

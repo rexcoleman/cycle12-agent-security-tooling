@@ -1,0 +1,23 @@
+{
+  "tools": [
+    {
+      "name": "list_files",
+      "description": "List files in the designated safe directory. Only returns filenames within the allowed sandbox.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {}
+      }
+    },
+    {
+      "name": "read_safe_file",
+      "description": "Read a file by name from the safe directory. Only accepts simple filenames without path components.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "filename": {"type": "string", "description": "Simple filename (no directory separators allowed)"}
+        },
+        "required": ["filename"]
+      }
+    }
+  ]
+}

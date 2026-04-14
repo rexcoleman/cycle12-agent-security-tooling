@@ -1,0 +1,46 @@
+{
+  "tools": [
+    {
+      "name": "git_diff",
+      "description": "Show git diff for a repository.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "repo_path": {
+            "type": "string"
+          },
+          "ref": {
+            "type": "string",
+            "default": "HEAD"
+          }
+        },
+        "required": [
+          "repo_path"
+        ]
+      }
+    },
+    {
+      "name": "read_file",
+      "description": "Read a file from a git repository.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "repo_path": {
+            "type": "string"
+          },
+          "file_path": {
+            "type": "string"
+          },
+          "ref": {
+            "type": "string",
+            "default": "HEAD"
+          }
+        },
+        "required": [
+          "repo_path",
+          "file_path"
+        ]
+      }
+    }
+  ]
+}

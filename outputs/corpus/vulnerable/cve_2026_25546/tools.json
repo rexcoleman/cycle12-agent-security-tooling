@@ -1,0 +1,23 @@
+{
+  "tools": [
+    {
+      "name": "execute_operation",
+      "description": "Execute a Godot project operation.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "project_path": {
+            "type": "string"
+          },
+          "operation": {
+            "type": "string",
+            "default": "build"
+          }
+        },
+        "required": [
+          "project_path"
+        ]
+      }
+    }
+  ]
+}

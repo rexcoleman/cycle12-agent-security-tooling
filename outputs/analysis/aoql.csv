@@ -1,0 +1,5 @@
+cisco: AOQL = 0.9200 (best TPR = 0.0800)
+medusa: AOQL = 0.0400 (best TPR = 0.9600)
+sigil: AOQL = 0.2000 (best TPR = 0.8000)
+AOQL ratio (worst/best): 23.00x
+H-4 >=2x criterion: MET

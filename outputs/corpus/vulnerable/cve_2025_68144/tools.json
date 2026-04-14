@@ -1,0 +1,48 @@
+{
+  "tools": [
+    {
+      "name": "git_show",
+      "description": "Show a git object.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "repo_path": {
+            "type": "string"
+          },
+          "ref": {
+            "type": "string"
+          },
+          "file_path": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "repo_path",
+          "ref"
+        ]
+      }
+    },
+    {
+      "name": "git_fetch",
+      "description": "Fetch from a remote repository.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "repo_path": {
+            "type": "string"
+          },
+          "remote": {
+            "type": "string",
+            "default": "origin"
+          },
+          "refspec": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "repo_path"
+        ]
+      }
+    }
+  ]
+}

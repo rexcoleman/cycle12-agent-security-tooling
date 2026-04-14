@@ -1,0 +1,25 @@
+{
+  "tools": [
+    {
+      "name": "execute_aws_command",
+      "description": "Execute an AWS CLI command from the allowed commands list.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "command": {
+            "type": "string",
+            "description": "The AWS CLI command to execute"
+          },
+          "allowed_commands": {
+            "type": "string",
+            "description": "Comma-separated list of allowed AWS services",
+            "default": "s3,ec2,iam"
+          }
+        },
+        "required": [
+          "command"
+        ]
+      }
+    }
+  ]
+}

@@ -57,7 +57,7 @@
 
 | ID | Status | Evidence | Date |
 |----|--------|----------|------|
-| H-1 | PENDING | — | — |
-| H-2 | PENDING | — | — |
-| H-3 | PENDING | — | — |
-| H-4 | CONDITIONAL | Activation depends on Phase 2 corpus size outcome | — |
+| H-1 | PARTIALLY SUPPORTED | 2 of 3 scanner pairs significantly different (Cisco vs Sigil p<0.001, MEDUSA vs Sigil p<0.001 after Bonferroni). Cisco vs MEDUSA NOT significant (p=0.667). | 2026-04-14 |
+| H-2 | PARTIALLY SUPPORTED | Category-level profiles differ (ASI01=0% all scanners, ASI05=100% Sigil). Predicted specialization pattern wrong: Sigil led all categories, no scanner led semantic categories. | 2026-04-14 |
+| H-3 | SUPPORTED | Each test case is independent server. Clustered bootstrap = standard bootstrap. No distortion. | 2026-04-14 |
+| H-4 | PARTIALLY SUPPORTED | AOQL ratio 23x (exceeds 2x threshold). Complementarity REFUTED: multi-scanner union = Sigil alone. Detection sets nested, not complementary. | 2026-04-14 |

@@ -1,0 +1,76 @@
+{
+  "tools": [
+    {
+      "name": "hash_data",
+      "description": "Hash data using specified algorithm.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "data": {
+            "type": "string"
+          },
+          "algorithm": {
+            "type": "string",
+            "default": "sha256"
+          }
+        },
+        "required": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "base64_encode",
+      "description": "Base64 encode a string.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "data": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "base64_decode",
+      "description": "Base64 decode a string.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "data": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "data"
+        ]
+      }
+    },
+    {
+      "name": "verify_hmac",
+      "description": "Verify an HMAC signature.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "data": {
+            "type": "string"
+          },
+          "signature": {
+            "type": "string"
+          },
+          "key": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "data",
+          "signature",
+          "key"
+        ]
+      }
+    }
+  ]
+}

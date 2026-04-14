@@ -1,0 +1,10 @@
+{
+  "id": "mcpsecbench_vulnerable_server",
+  "cve": "MCPSecBench-VulnerableServer",
+  "owasp_category": "ASI05",
+  "vulnerability_type": "path_traversal_and_injection",
+  "cwe": "CWE-22/CWE-78",
+  "ground_truth": "vulnerable",
+  "cvss": "N/A",
+  "description": "Server with path traversal in file read and command injection in sandbox execution"
+}

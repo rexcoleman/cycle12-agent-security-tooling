@@ -1,0 +1,10 @@
+{
+  "id": "cve_2026_32871",
+  "cve": "CVE-2026-32871",
+  "owasp_category": "ASI04",
+  "vulnerability_type": "ssrf_path_traversal",
+  "cwe": "CWE-22",
+  "ground_truth": "vulnerable",
+  "cvss": 8.5,
+  "description": "FastMCP OpenAPIProvider SSRF + path traversal enabling auth bypass"
+}

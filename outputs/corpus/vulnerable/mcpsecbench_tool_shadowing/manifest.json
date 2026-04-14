@@ -1,0 +1,10 @@
+{
+  "id": "mcpsecbench_tool_shadowing",
+  "cve": "MCPSecBench-ToolShadowing",
+  "owasp_category": "ASI01",
+  "vulnerability_type": "tool_shadowing",
+  "cwe": "N/A",
+  "ground_truth": "vulnerable",
+  "cvss": "N/A",
+  "description": "Malicious tool shadows legitimate signature verification tool"
+}

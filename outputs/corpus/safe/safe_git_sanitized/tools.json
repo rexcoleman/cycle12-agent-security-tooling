@@ -1,0 +1,23 @@
+{
+  "tools": [
+    {
+      "name": "git_log",
+      "description": "Get git log for a repository.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "repo_path": {
+            "type": "string"
+          },
+          "count": {
+            "type": "integer",
+            "default": 10
+          }
+        },
+        "required": [
+          "repo_path"
+        ]
+      }
+    }
+  ]
+}

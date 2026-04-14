@@ -1,0 +1,38 @@
+test_case_id,category,ground_truth_label,source_cve,cwe,cvss,vulnerability_type,confidence,notes
+asi03_dns_rebinding,ASI03,vulnerable,CVE-2026-35568/CVE-2026-35577,CWE-350,7.0,dns_rebinding_missing_auth,high,"MCP server missing Host header validation, enabling DNS rebinding attacks"
+cve_2025_53107,ASI05,vulnerable,CVE-2025-53107,CWE-78,9.8,command_injection,high,git-mcp-server command injection via unsanitized input to child_process.exec
+cve_2025_53818,ASI05,vulnerable,CVE-2025-53818,CWE-78,8.5,command_injection_via_prompt_injection,high,GitHub Kanban MCP command injection via LLM prompt injection through shell characters
+cve_2025_6514,ASI04,vulnerable,CVE-2025-6514,CWE-78,8.5,command_injection_supply_chain,high,mcp-remote OS command injection via untrusted MCP server connections
+cve_2025_68143,ASI02,vulnerable,CVE-2025-68143,CWE-22,7.5,path_traversal,high,Anthropic mcp-server-git path traversal allowing arbitrary file read
+cve_2025_68144,ASI02,vulnerable,CVE-2025-68144,CWE-88,7.5,argument_injection,high,Anthropic mcp-server-git argument injection enabling RCE via .git/config
+cve_2025_68145,ASI03,vulnerable,CVE-2025-68145,CWE-863,7.5,authorization_bypass,high,Anthropic mcp-server-git repository scoping bypass via path traversal
+cve_2026_0755,ASI05,vulnerable,CVE-2026-0755,CWE-78,9.8,command_injection_eval,high,gemini-mcp-tool execAsync with unsanitized user strings and eval() pattern
+cve_2026_0756,ASI05,vulnerable,CVE-2026-0756,CWE-78,9.8,command_injection,high,GitHub Kanban MCP server async command injection via shell metacharacters
+cve_2026_1977,ASI05,vulnerable,CVE-2026-1977,CWE-94,9.8,code_injection_eval,high,mcp-vegalite-server passes vegalite_specification directly to Python eval()
+cve_2026_2008,ASI05,vulnerable,CVE-2026-2008,CWE-94,9.8,code_injection_eval,high,fermat-mcp eqn_chart processes equation strings without neutralizing code constructs
+cve_2026_23744,ASI03,vulnerable,CVE-2026-23744,CWE-306,9.8,missing_authentication,high,"MCPJam inspector HTTP server binds 0.0.0.0, no auth on server management endpoint"
+cve_2026_25546,ASI05,vulnerable,CVE-2026-25546,CWE-78,9.8,command_injection,high,godot-mcp executeOperation passes projectPath directly to exec()
+cve_2026_26029,ASI05,vulnerable,CVE-2026-26029,CWE-78,9.8,command_injection,high,sf-mcp-server command injection via child_process.exec with user-controlled input
+cve_2026_32871,ASI04,vulnerable,CVE-2026-32871,CWE-22,8.5,ssrf_path_traversal,high,FastMCP OpenAPIProvider SSRF + path traversal enabling auth bypass
+cve_2026_33989,ASI02,vulnerable,CVE-2026-33989,CWE-22,8.1,path_traversal,high,mobile-mcp path traversal in saveTo/output params of screenshot/recording tools
+cve_2026_5058,ASI05,vulnerable,CVE-2026-5058,CWE-78,9.8,command_injection,high,aws-mcp-server command injection in allowed commands list handling
+mcpsecbench_config_drift,ASI04,vulnerable,MCPSecBench-ConfigDrift,N/A,N/A,configuration_drift,high,Server behavior drifts after initial trust is established
+mcpsecbench_indirect_injection,ASI01,vulnerable,MCPSecBench-IndirectInjection,N/A,N/A,indirect_prompt_injection,high,Resources contain indirect prompt injection payloads that hijack LLM behavior
+mcpsecbench_name_squatting_server,ASI04,vulnerable,MCPSecBench-NameSquattingServer,N/A,N/A,name_squatting_server,high,Server impersonates legitimate compute server while exfiltrating data
+mcpsecbench_name_squatting_tools,ASI04,vulnerable,MCPSecBench-NameSquattingTools,N/A,N/A,name_squatting,high,Tool name mimics legitimate signature verification tool
+mcpsecbench_schema_inconsistency,ASI04,vulnerable,MCPSecBench-SchemaInconsistency,N/A,N/A,schema_inconsistency,high,Tool schema mismatches actual behavior - hidden dangerous capabilities
+mcpsecbench_tool_poisoning,ASI01,vulnerable,MCPSecBench-ToolPoisoning,N/A,N/A,tool_poisoning,high,Tool descriptions contain hidden instructions to hijack LLM behavior
+mcpsecbench_tool_shadowing,ASI01,vulnerable,MCPSecBench-ToolShadowing,N/A,N/A,tool_shadowing,high,Malicious tool shadows legitimate signature verification tool
+mcpsecbench_vulnerable_server,ASI05,vulnerable,MCPSecBench-VulnerableServer,CWE-22/CWE-78,N/A,path_traversal_and_injection,high,Server with path traversal in file read and command injection in sandbox execution
+decoy_crypto_utils,N/A,safe,N/A,N/A,N/A,none,high,Crypto/hash utilities - safe despite handling sensitive operations
+decoy_data_processor,N/A,safe,N/A,N/A,N/A,none,high,Complex data processing server - safe despite complexity
+decoy_database,N/A,safe,N/A,N/A,N/A,none,high,Database tool with parameterized queries - safe despite SQL access
+decoy_http_client,N/A,safe,N/A,N/A,N/A,none,high,HTTP client with URL allowlist - complex but safe
+decoy_text_processor,N/A,safe,N/A,N/A,N/A,none,high,Complex text processing - safe despite regex handling
+safe_api_validated,N/A,safe,N/A,N/A,N/A,none,high,API client with URL validation preventing SSRF and path traversal
+safe_authenticated,N/A,safe,N/A,N/A,N/A,none,high,Data access with HMAC authentication
+safe_command_sanitized,N/A,safe,N/A,N/A,N/A,none,high,Command execution with whitelist and no shell=True
+safe_eval_literal,N/A,safe,N/A,N/A,N/A,none,high,Math evaluation with AST validation (no arbitrary code execution)
+safe_git_sanitized,N/A,safe,N/A,N/A,N/A,none,high,Git operations with path validation and no shell=True
+safe_honest_tools,N/A,safe,N/A,N/A,N/A,none,high,Calculator with honest tool descriptions (no poisoning)
+safe_path_canonical,N/A,safe,N/A,N/A,N/A,none,high,File reading with realpath canonicalization preventing traversal

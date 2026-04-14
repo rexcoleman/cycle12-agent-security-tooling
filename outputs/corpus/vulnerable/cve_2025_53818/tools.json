@@ -1,0 +1,37 @@
+{
+  "tools": [
+    {
+      "name": "search_issues",
+      "description": "Search GitHub issues with a query string.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "query"
+        ]
+      }
+    },
+    {
+      "name": "execute_workflow",
+      "description": "Execute a GitHub Actions workflow.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "workflow_name": {
+            "type": "string"
+          },
+          "params": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "workflow_name"
+        ]
+      }
+    }
+  ]
+}

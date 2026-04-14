@@ -1,0 +1,33 @@
+{
+  "tools": [
+    {
+      "name": "read_repository_file",
+      "description": "Read a file from the git repository.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "file_path": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "file_path"
+        ]
+      }
+    },
+    {
+      "name": "list_files",
+      "description": "List files in a repository directory.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "directory": {
+            "type": "string",
+            "default": "."
+          }
+        },
+        "required": []
+      }
+    }
+  ]
+}

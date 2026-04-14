@@ -1,0 +1,10 @@
+{
+  "id": "cve_2025_68144",
+  "cve": "CVE-2025-68144",
+  "owasp_category": "ASI02",
+  "vulnerability_type": "argument_injection",
+  "cwe": "CWE-88",
+  "ground_truth": "vulnerable",
+  "cvss": 7.5,
+  "description": "Anthropic mcp-server-git argument injection enabling RCE via .git/config"
+}

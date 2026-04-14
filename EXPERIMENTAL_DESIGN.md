@@ -35,6 +35,40 @@ Before reading stage 0-2 artifacts in depth, I predict:
 
 **Gate -1 verdict:** PASS (pending EDA validation of 3 critical unknowns)
 
+### §8a Novelty Plan
+
+Novelty approach: first threshold-independent comparison of agent security scanners using OC curves from manufacturing QA (ISO 2859-1). No prior work applies OC curves to security scanner evaluation in any domain. Differentiate from 5+ works (OWASP Benchmark, MCP-SafetyBench, MSB, MCPSecBench, Miercom DAST Benchmark) — each evaluates different tools/domains/methodologies.
+
+### §8b Impact Plan
+
+Impact approach: practitioner-facing benchmark corpus + scoring framework. Practitioners run `./score_scanner.sh <scanner>` to get detection profile in 15 minutes. Per-category heatmap reveals scanner blind spots. AOQL quantifies "good enough" by manufacturing QA standards.
+
+### §8c Generalization Plan
+
+Generalization approach: corpus spans 5 OWASP Agentic AI categories, 3+ scanner architectures (rule-based, code analysis, supply chain). Report Jaccard similarity between scanner detection sets. Explicit boundary statement: results hold for tested scanners on tested corpus as of April 2026. Publish corpus for community extension.
+
+### Baseline Fairness
+
+Tuning Parity statement: all scanners tested in their default free configurations. No scanner received custom rules, tuning, or API key advantages. Cisco tested YARA-only (behavioral/LLM require API keys). AgentSeal tested free tier only. This ensures fair comparison but underrepresents scanners with premium features.
+
+### Novel Component Isolation
+
+Isolation Test: the novel component is the OC curve framework applied to scanner evaluation. Ablation 1 (remove LLM-judge scanners) tests whether the framework works with rule-based scanners only. Ablation 2 (binary aggregation) tests whether per-category analysis adds value beyond aggregate comparison. The Active Ingredient is the threshold-independent comparison — Youden alone would miss the OC curve shape information.
+
+### R34 Depth Sections
+
+**Depth Commitment:** Minimum 5 primary sources substantively engaged. See FINDINGS.md §Depth Commitment.
+
+**Mechanism Analysis:** OC curve mechanism: detection probability function maps vulnerability density to scanner acceptance rate. See FINDINGS.md §Detection Methodology.
+
+**Formal Contribution Statement:** See FINDINGS.md §Formal Contribution Statement.
+
+**Published Baseline:** OWASP Benchmark v1.2 Youden scoring on 2,740 Java test cases. Miercom DAST Benchmark on 11 apps. See FINDINGS.md §Published Baseline.
+
+**Parameter Sensitivity:** See FINDINGS.md §Parameter Sensitivity and §Sensitivity Analysis.
+
+**Defense Harm Test:** See FINDINGS.md §Defense Harm Test and §Adaptive Adversary Analysis.
+
 ### Assumption Challenge (A8)
 
 The field currently believes that **scanner proliferation improves practitioner security posture** — that having 9+ agent security scanners available means practitioners are better protected. This assumption is embedded in scanner vendor marketing (AgentSeal: "We scanned 1,808 servers"; Enkrypt AI: "33% had critical vulnerabilities") and in community discourse that treats scanner availability as progress. The specific reason this may be incorrect: traditional SAST tools have 40-91% false positive rates when untuned (Ghost Security 2025 across ~3,000 repos; Autonoma/Pixee 2025 on benchmark applications). If agent security scanners have comparable FP rates — plausible given the less mature threat taxonomy (OWASP Agentic AI risks vs well-defined CWEs) — then running unvalidated scanners may degrade security posture by consuming team bandwidth on false alerts while creating false confidence. The 66% vs 33% divergence between AgentSeal and Enkrypt AI already suggests calibration is poor. More scanners without calibration may mean more noise, not more signal.
@@ -44,6 +78,8 @@ The field currently believes that **scanner proliferation improves practitioner 
 The primary practitioner artifact is a **benchmark corpus + scoring framework** — a downloadable test suite of MCP server configurations with known-vulnerable and known-safe labels, plus a scoring script that runs any scanner against the corpus and computes detection metrics (Youden Index, OC curve data points, per-category heatmap). Secondary artifact: a comparative scorecard (CSV/JSON) of evaluated scanners' detection profiles. This is the agent-security equivalent of the OWASP Benchmark test suite. A practitioner can run `./score_scanner.sh <scanner_command>` against the corpus and get a detection profile in 15 minutes.
 
 ### Surprise pre-registration
+
+**Pre-registered expected findings:** Scanners will show moderate disagreement. What would surprise: all scanners near-random, one scanner dominates all, or high inter-scanner agreement with low ground-truth accuracy.
 
 **Expected finding:** Scanners will show moderate disagreement, with each scanner showing strengths in different vulnerability categories (specialization pattern). Some scanners will perform near-random on categories outside their design focus.
 

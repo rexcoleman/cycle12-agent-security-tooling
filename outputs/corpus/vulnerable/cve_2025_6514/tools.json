@@ -1,0 +1,45 @@
+{
+  "tools": [
+    {
+      "name": "connect_remote",
+      "description": "Connect to a remote MCP server.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "server_url": {
+            "type": "string"
+          },
+          "auth_token": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "server_url"
+        ]
+      }
+    },
+    {
+      "name": "proxy_request",
+      "description": "Proxy a request to a remote MCP server.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "server_url": {
+            "type": "string"
+          },
+          "method": {
+            "type": "string"
+          },
+          "path": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "server_url",
+          "method",
+          "path"
+        ]
+      }
+    }
+  ]
+}

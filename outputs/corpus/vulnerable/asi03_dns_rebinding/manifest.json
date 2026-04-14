@@ -1,0 +1,10 @@
+{
+  "id": "asi03_dns_rebinding",
+  "cve": "CVE-2026-35568/CVE-2026-35577",
+  "owasp_category": "ASI03",
+  "vulnerability_type": "dns_rebinding_missing_auth",
+  "cwe": "CWE-350",
+  "ground_truth": "vulnerable",
+  "cvss": 7.0,
+  "description": "MCP server missing Host header validation, enabling DNS rebinding attacks"
+}

@@ -1,0 +1,6 @@
+{
+  "id": "decoy_text_processor",
+  "description": "Complex text processing - safe despite regex handling",
+  "ground_truth": "safe",
+  "vulnerability_type": "none"
+}

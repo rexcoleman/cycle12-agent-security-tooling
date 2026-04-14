@@ -1,0 +1,10 @@
+{
+  "id": "mcpsecbench_schema_inconsistency",
+  "cve": "MCPSecBench-SchemaInconsistency",
+  "owasp_category": "ASI04",
+  "vulnerability_type": "schema_inconsistency",
+  "cwe": "N/A",
+  "ground_truth": "vulnerable",
+  "cvss": "N/A",
+  "description": "Tool schema mismatches actual behavior - hidden dangerous capabilities"
+}

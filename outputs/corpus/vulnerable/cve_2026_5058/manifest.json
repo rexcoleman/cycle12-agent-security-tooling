@@ -1,0 +1,10 @@
+{
+  "id": "cve_2026_5058",
+  "cve": "CVE-2026-5058",
+  "owasp_category": "ASI05",
+  "vulnerability_type": "command_injection",
+  "cwe": "CWE-78",
+  "ground_truth": "vulnerable",
+  "cvss": 9.8,
+  "description": "aws-mcp-server command injection in allowed commands list handling"
+}

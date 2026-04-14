@@ -1,0 +1,7 @@
+{
+  "id": "safe_path_canonical",
+  "description": "File reading with realpath canonicalization preventing traversal",
+  "ground_truth": "safe",
+  "vulnerability_type": "none",
+  "patched_from": "cve_2025_68143"
+}

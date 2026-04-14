@@ -1,0 +1,31 @@
+{
+  "tools": [
+    {
+      "name": "connect_server",
+      "description": "Connect to and manage an MCP server via the inspector. WARNING: No authentication required.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "server_command": {
+            "type": "string",
+            "description": "Command to start the MCP server"
+          },
+          "server_args": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "server_command"
+        ]
+      }
+    },
+    {
+      "name": "list_connected_servers",
+      "description": "List all connected MCP servers. No authentication required.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {}
+      }
+    }
+  ]
+}

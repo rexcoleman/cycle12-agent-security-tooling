@@ -1,0 +1,10 @@
+{
+  "id": "cve_2026_1977",
+  "cve": "CVE-2026-1977",
+  "owasp_category": "ASI05",
+  "vulnerability_type": "code_injection_eval",
+  "cwe": "CWE-94",
+  "ground_truth": "vulnerable",
+  "cvss": 9.8,
+  "description": "mcp-vegalite-server passes vegalite_specification directly to Python eval()"
+}

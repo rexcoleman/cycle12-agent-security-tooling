@@ -1,0 +1,10 @@
+{
+  "id": "mcpsecbench_indirect_injection",
+  "cve": "MCPSecBench-IndirectInjection",
+  "owasp_category": "ASI01",
+  "vulnerability_type": "indirect_prompt_injection",
+  "cwe": "N/A",
+  "ground_truth": "vulnerable",
+  "cvss": "N/A",
+  "description": "Resources contain indirect prompt injection payloads that hijack LLM behavior"
+}

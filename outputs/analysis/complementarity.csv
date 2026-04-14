@@ -1,0 +1,8 @@
+cisco alone: 2/25 = 8.00%
+medusa alone: 4/25 = 16.00%
+sigil alone: 20/25 = 80.00%
+cisco+medusa union: 5/25 = 20.00% (Jaccard=0.200)
+cisco+sigil union: 20/25 = 80.00% (Jaccard=0.100)
+medusa+sigil union: 20/25 = 80.00% (Jaccard=0.200)
+All 3 scanners union: 20/25 = 80.00%
+Diminishing returns: single=20, pair=20, triple=20

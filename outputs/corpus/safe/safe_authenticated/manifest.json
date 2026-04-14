@@ -1,0 +1,7 @@
+{
+  "id": "safe_authenticated",
+  "description": "Data access with HMAC authentication",
+  "ground_truth": "safe",
+  "vulnerability_type": "none",
+  "patched_from": "cve_2026_23744"
+}

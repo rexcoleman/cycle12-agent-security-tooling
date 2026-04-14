@@ -1,0 +1,10 @@
+{
+  "id": "cve_2026_26029",
+  "cve": "CVE-2026-26029",
+  "owasp_category": "ASI05",
+  "vulnerability_type": "command_injection",
+  "cwe": "CWE-78",
+  "ground_truth": "vulnerable",
+  "cvss": 9.8,
+  "description": "sf-mcp-server command injection via child_process.exec with user-controlled input"
+}

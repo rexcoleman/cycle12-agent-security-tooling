@@ -1,0 +1,10 @@
+{
+  "id": "cve_2026_23744",
+  "cve": "CVE-2026-23744",
+  "owasp_category": "ASI03",
+  "vulnerability_type": "missing_authentication",
+  "cwe": "CWE-306",
+  "ground_truth": "vulnerable",
+  "cvss": 9.8,
+  "description": "MCPJam inspector HTTP server binds 0.0.0.0, no auth on server management endpoint"
+}

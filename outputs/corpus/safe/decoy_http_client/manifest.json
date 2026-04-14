@@ -1,0 +1,6 @@
+{
+  "id": "decoy_http_client",
+  "description": "HTTP client with URL allowlist - complex but safe",
+  "ground_truth": "safe",
+  "vulnerability_type": "none"
+}

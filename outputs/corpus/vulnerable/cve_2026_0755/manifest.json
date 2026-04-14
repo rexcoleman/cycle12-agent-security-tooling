@@ -1,0 +1,10 @@
+{
+  "id": "cve_2026_0755",
+  "cve": "CVE-2026-0755",
+  "owasp_category": "ASI05",
+  "vulnerability_type": "command_injection_eval",
+  "cwe": "CWE-78",
+  "ground_truth": "vulnerable",
+  "cvss": 9.8,
+  "description": "gemini-mcp-tool execAsync with unsanitized user strings and eval() pattern"
+}

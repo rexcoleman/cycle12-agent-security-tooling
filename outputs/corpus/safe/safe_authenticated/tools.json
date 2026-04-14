@@ -1,0 +1,31 @@
+{
+  "tools": [
+    {
+      "name": "query_data",
+      "description": "Query data with authentication required.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string"
+          },
+          "auth_token": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "query",
+          "auth_token"
+        ]
+      }
+    },
+    {
+      "name": "get_server_status",
+      "description": "Get server status (public endpoint).",
+      "inputSchema": {
+        "type": "object",
+        "properties": {}
+      }
+    }
+  ]
+}

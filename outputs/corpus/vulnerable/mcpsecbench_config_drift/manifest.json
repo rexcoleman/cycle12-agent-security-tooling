@@ -1,0 +1,10 @@
+{
+  "id": "mcpsecbench_config_drift",
+  "cve": "MCPSecBench-ConfigDrift",
+  "owasp_category": "ASI04",
+  "vulnerability_type": "configuration_drift",
+  "cwe": "N/A",
+  "ground_truth": "vulnerable",
+  "cvss": "N/A",
+  "description": "Server behavior drifts after initial trust is established"
+}
