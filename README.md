@@ -19,6 +19,16 @@
 | Cisco MCP Scanner: lowest detection | 8% TPR (2/25) at all operating points | Only detects ASI05 code execution |
 | Statistically significant differences | Fisher's exact p<0.001 (Bonferroni-corrected) | Sigil vs Cisco, Sigil vs MEDUSA |
 
+### Best Operating Points by Scanner
+
+| Scanner | Operating Point | TPR | FPR | Youden | TPR 95% CI |
+|---|---|---|---|---|---|
+| Cisco MCP Scanner | OP1 (static, all) | 0.08 | 0.00 | 0.08 | [0.01, 0.26] |
+| MEDUSA | OP3 (high threshold) | 0.16 | 0.00 | 0.16 | [0.05, 0.36] |
+| MEDUSA | OP1 (any finding) | 0.96 | 1.00 | -0.04 | [0.80, 1.00] |
+| Sigil+bandit | OP1 (score >13) | 0.80 | 0.50 | 0.30 | [0.59, 0.93] |
+| Sigil+bandit | OP2 (score >19) | 0.36 | 0.25 | 0.11 | [0.18, 0.57] |
+
 ## The Finding
 
 We evaluated three agent security scanners — Cisco MCP Scanner (v4.6.0), MEDUSA (v2026.4.0), and Sigil (with bandit integration) — against a ground-truth corpus of 37 MCP server test cases using Operating Characteristic curve methodology adapted from manufacturing quality assurance.
