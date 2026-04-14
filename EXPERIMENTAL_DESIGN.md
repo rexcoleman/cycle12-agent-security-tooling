@@ -3,7 +3,7 @@
 > **Gate:** 0 (must pass before Phase 1 compute)
 > **Date:** 2026-04-14
 > **Target venue:** arxiv
-> **lock_commit:** TBD
+> **lock_commit:** e8afae3
 > **Profile:** security-ml
 
 ## Dispatch 2 Predictions (GPL-07)
