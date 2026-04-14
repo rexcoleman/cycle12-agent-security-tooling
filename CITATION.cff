@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+authors:
+  - family-names: Coleman
+    given-names: Rex
+title: "Agent Security Scanner Operating Characteristics"
+date-released: 2026-04-14
+url: "https://github.com/rexcoleman/cycle12-agent-security-tooling"
+repository-code: "https://github.com/rexcoleman/cycle12-agent-security-tooling"
+license: MIT
+keywords:
+  - agent-security
+  - mcp-security
+  - security-scanner
+  - operating-characteristic
+  - owasp
+  - benchmark
