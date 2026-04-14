@@ -1,6 +1,6 @@
-# Agent Security Scanner Operating Characteristics
+# Agent Security Scanner Benchmark: Can Bandit, Semgrep, or MCP Scanners Detect Agent Vulnerabilities?
 
-**No agent security scanner achieves a Youden Index above 0.30. Scanner union provides zero complementarity — all three scanners combined detect exactly what Sigil alone detects (80%). The AOQL ranges 23x across scanners.**
+**No agent security scanner achieves a Youden Index above 0.30 across OWASP Agentic AI categories. Scanner union provides zero complementarity — all three scanners combined detect exactly what Sigil alone detects (80%). Tool poisoning (ASI01) and identity/privilege attacks (ASI03) have 0% detection. AOQL ranges 23x across scanners.**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-green.svg)](https://www.python.org/downloads/)
@@ -31,7 +31,7 @@
 
 ## The Finding
 
-We evaluated three agent security scanners — Cisco MCP Scanner (v4.6.0), MEDUSA (v2026.4.0), and Sigil (with bandit integration) — against a ground-truth corpus of 37 MCP server test cases using Operating Characteristic curve methodology adapted from manufacturing quality assurance.
+We benchmarked three agent security scanners — Cisco MCP Scanner (v4.6.0), MEDUSA (v2026.4.0), and Sigil (with bandit integration) — against a ground-truth corpus of 37 MCP server test cases covering 5 OWASP Agentic AI Security categories. Traditional SAST tools (bandit, semgrep, CodeQL) were not designed for agent-specific vulnerabilities, and the MCP-specific scanners don't fill the gap.
 
 The core result: **the scanners don't complement each other.** Adding Cisco and MEDUSA to Sigil adds zero detection coverage. And even the best scanner (Sigil) only achieves TPR=0.80 at FPR=0.50 — meaning half of all safe servers are flagged as vulnerable to catch 80% of real vulnerabilities.
 
