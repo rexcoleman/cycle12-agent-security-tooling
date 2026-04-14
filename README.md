@@ -72,6 +72,7 @@ Full methodology in [EXPERIMENTAL_DESIGN.md](EXPERIMENTAL_DESIGN.md). All result
 
 ## Related Work
 
+- Blog post: [Can Bandit or Semgrep Detect Agent Vulnerabilities?](https://rexcoleman.dev/posts/agent-security-scanner-benchmark/) — Accessible summary of this research
 - [agent-skill-scanner](https://github.com/rexcoleman/agent-skill-scanner) — PyPI-installable agent security scanner (SE-157)
 - [agent-skill-scan-action](https://github.com/rexcoleman/agent-skill-scan-action) — GitHub Action for agent security (SE-158)
 - [agent-skill-scan-mcp](https://github.com/rexcoleman/agent-skill-scan-mcp) — MCP server for agent security checks (SE-159)
