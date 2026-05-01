@@ -2,8 +2,8 @@
 project: "Agent Security Scanner Operating Characteristics"
 fp: "FP-12"
 status: COMPLETE
-quality_score: 9.0
-last_scored: 2026-04-14
+quality_score: 8.9
+last_scored: 2026-04-16
 profile: security-ml
 ---
 
