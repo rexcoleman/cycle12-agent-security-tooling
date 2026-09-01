@@ -1,5 +1,13 @@
 # Requirements: Agent Security Scanner Operating Characteristics
 
+> **CURRENT MAC MINI CONSTRAINT (2026-09-01):** The Mac Mini is reserved as
+> the `build_cycle_sdlc` production witness and is unavailable for general,
+> GPU, research, batch, or agent compute absent an explicit TCB-role change.
+> Any body language offering it as compute or a fallback is historical and
+> superseded by this constraint and the Moonshots `mac_mini_ops.md` CURRENT
+> AUTHORITY. Hardware inventory facts alone do not grant workload authority.
+
+
 ## Deliverables
 
 1. **FINDINGS.md** — govML-compatible, CLAIM_STRENGTH_SPEC tagged, with all required sections (Novelty Assessment, Cross-Domain Connections, Generalization Analysis, Practitioner Impact, Hostile Baseline Check, Effect Persistence, Boundary Statement, Pre-emptive Criticism)
